@@ -1,12 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Katik - Hitung Luas Bangun Datar</title>
     <link rel="stylesheet" href="css\styles.css">
 </head>
+
 <body>
-    
+    <!--Begin header-->
+    <header class="main-header">
+        <h1>Welcome to Katik</h1>
+        <p>Hai Sobat, Selamat datang di Katik :)</p>
+        <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+    </header>
+    <!--End header-->
+
+    <!--Begin main-->
+    <main>
+        <!--Begin navigation menu-->
+        <nav>
+            <ul>
+                <button class="nav-btn" onclick="showSegitiga()">Segitiga</button>
+                <button class="nav-btn" onclick="showJajarGenjang()">Jajar Genjang</button>
+            </ul>
+        </nav>
+        <!--End navigation menu-->
+
+        <!--Begin Segitiga-->
+        <section id="segitiga">
+            <div class="segitiga-content">
+                <h1>Segitiga</h1>
+                <article>
+                    Segitiga adalah bentuk bangun datar yang memiliki tiga sisi dan tiga sudut dengan panjang atau besar
+                    yang sama maupun berbeda-beda.
+
+                    Segitiga sendiri terbagi menjadi dua jenis, yaitu segitiga yang dilihat berdasarkan sisinya dan
+                    segitiga
+                    yang dilihat berdasarkan besaran sudutnya.
+                </article>
+
+                <!--Begin luas segitiga -->
+                <div class="luas-segitiga-content">
+                    <section>
+                        <header>
+                            <h2 class="luas-segitiga-header">Luas Segitiga</h2>
+                        </header>
+                        <div class="luas-segitiga-img">
+                            <article>
+                                <img src="assets/luas-segitiga.png" alt="luas-segitiga">
+                            </article>
+                            <p class="rumus-luas-segitiga">
+                                Rumus Luas Segitiga:<br> L = Luas<br> a = Panjang Alas<br> t = Tinggi<br> L = 1/2 x a x
+                                t<br>
+                            </p>
+                        </div>
+                        <form class="luas-segitiga-form">
+                            <label for="alas-segitiga">Masukkan panjang alas segitiga</label>
+                            <input id="alas-segitiga" type="number">
+                            <br>
+                            <label for="tinggi-segitiga">Masukkan tinggi segitiga</label>
+                            <input id="tinggi-segitiga" type="number">
+                            <br>
+                            <button type="button" onclick="hitungLuas()">Hitung Luas</button>
+                        </form>
+                        <div class="hasil-penjelasan">
+                            <h3>Hasil:</h3>
+                            <p id="hasil-luas">0</p>
+                            <h3>Penjelasan Cara Menghitung:</h3>
+                            <pre id="penjelasan-hitung">-</pre> <!-- Gunakan tag <pre> untuk menjaga format baris -->
+                        </div>
+                    </section>
+                </div>
+                <!--End luas segitiga-->
+
+                <!--Begin keliling segitiga-->
+                <div class="keliling-segitiga-content">
+                    <section>
+                        <header>
+                            <h2 class="keliling-segitiga-header">Keliling Segitiga</h2>
+                        </header>
+                        <div class="keliling-segitiga-img">
+                            <article>
+                                <img src="assets/keliling-segitiga.png" alt="keliling-segitiga">
+                                <p class="rumus-keliling-segitiga">
+                                    Rumus Keliling Segitiga:<br>
+                                    K = Keliling<br>
+                                    AB = panjang sisi dari titik A ke titik B<br>
+                                    BC = panjang sisi dari titik B ke titik C<br>
+                                    CA = panjang sisi dari titik C ke titik A<br>
+                                    K = AB + BC + CA<br>
+                                </p>
+                            </article>
+                        </div>
+                        <form class="keliling-segitiga-form">
+                            <label for="sisi1-keliling">Masukkan panjang sisi AB</label>
+                            <input id="sisi1-keliling" type="number">
+                            <br>
+                            <label for="sisi2-keliling">Masukkan panjang sisi BC</label>
+                            <input id="sisi2-keliling" type="number">
+                            <br>
+                            <label for="sisi3-keliling">Masukkan panjang sisi CA</label>
+                            <input id="sisi3-keliling" type="number">
+                            <br>
+                            <button type="button" onclick="hitungKeliling()">Hitung Keliling</button>
+                            <br>
+                        </form>
+                        <div class="hasil-penjelasan">
+                            <h3>Hasil:</h3>
+                            <p id="hasil-keliling-segitiga">0</p>
+                            <h3>Penjelasan Cara Menghitung:</h3>
+                            <pre id="penjelasan-keliling">-</pre> <!-- Gunakan tag <pre> untuk menjaga format baris -->
+                        </div>
+                    </section>
+                </div>
+                <!--End keliling segitiga-->
+            </div>
+        </section>
+        <!--End Segitiga-->
+
+        <!--Begin Jajargenjang-->
+        <section id="jajar-genjang">
+            <h1>Jajar genjang</h1>
+            <article>
+                Jajar genjang adalah bangun datar dua dimensi yang memiliki dua pasang sisi berhadapan yang sejajar dan
+                sama panjang.
+                <ul>
+                    <li>
+                        Sisi-sisi berhadapan: Sejajar dan sama panjang.
+                    </li>
+                    <li>
+                        Sudut berhadapan: Sama besar.
+                    </li>
+                    <li>
+                        Sudut yang berdekatan: Jumlah dua sudut yang berdekatan selalu 180 derajat.
+                    </li>
+                </ul>
+            </article>
+
+            <!--Begin luas jajargenjang -->
+            <div class="luas-jajargenjang-content">
+                <section>
+                    <header>
+                        <h2 class="luas-jajargenjang-header">Luas Jajargenjang</h2>
+                    </header>
+                    <div class="luas-jajargenjang-img">
+                        <article>
+                            <img src="assets\jajar-genjang.png" />
+                            <p class="rumus-luas-jajargenjang"></p>
+                            Rumus Luas Jajar genjang:<br> L = Luas<br> a = Panjang Alas<br> t = Tinggi<br> L = a x
+                            t<br>
+                            </p>
+                        </article>
+
+                    </div>
+                    <form class="luas-jajargenjang-form">
+                        <label for="alas-jajargenjang">Masukkan panjang alas jajar genjang</label>
+                        <input id="alas-jajargenjang" type="number">
+                        <br />
+                        <label for="tinggi-jajargenjang">Masukkan tinggi jajar genjang</label>
+                        <input id="tinggi-jajargenjang" type="number">
+                        <br />
+                        <button type="button" onclick="hitungLuasJajargenjang()">Hitung</button>
+
+                    </form>
+                    <div class="hasil-penjelasan">
+                        <p>Hasil: <span id="luas-jajargenjang">0</span></p>
+                        <h3>Penjelasan Cara Menghitung:</h3>
+                        <pre id="penjelasan-luas-jajargenjang">-</pre>
+                        <!-- Gunakan <pre> untuk menjaga format baris -->
+                    </div>
+                </section>
+            </div>
+            <!--End luas jajargenjang-->
+
+            <!--Begin keliling jajargenjang-->
+            <div class="keliling-jajargenjang-content">
+                <section>
+                    <header>
+                        <h2 class="keliling-jajargenjang-header">Keliling Jajar genjang</h2>
+                    </header>
+                    <div class="keliling-jajargenjang-img">
+                        <article>
+                            <img src="assets\jajar-genjang.png" />
+                            <p class="rumus-keliling-jajargenjang">
+                                Rumus Keliling Jajargenjang:<br> K = 2x(a+b) <br>K = Keliling<br> a = panjang
+                                alas<br> b= sisi miring
+                            </p>
+                        </article>
+                    </div>
+                    <form class="keliling-jajargenjang-form">
+                        <label for="alas-jajargenjang">Masukkan alas jajar genjang</label>
+                        <input id="alas-jajargenjang" type="number">
+                        <br />
+                        <label for="sisi-miring">Masukkan sisi miring jajar genjang</label>
+                        <input id="sisi-miring" type="number">
+                        <br />
+                        <button type="button" onclick="hitungKelilingJajargenjang()">Hitung</button>
+
+                    </form>
+
+                    <div class="hasil-penjelasan">
+                        <p>Hasil: <span id="keliling-jajargenjang">0</span></p>
+                        <h3>Penjelasan Cara Menghitung:</h3>
+                        <pre id="penjelasan-keliling-jajargenjang">-</pre>
+                    </div>
+                </section>
+            </div>
+            <!--End keliling jajar genjang-->
+            </div>
+        </section>
+        <!--End Jajar genjang-->
+    </main>
+    <!--End Main-->
+
+
+    <script src="js\script.js"></script>
 </body>
+<!--Begin footer-->
+<footer>
+    Created by &copy; Ilana Fedelia
+</footer>
+<!--End Footer-->
+
 </html>
