@@ -25,6 +25,8 @@ nav {
 }
 
 .nav-btn {
+    display: block;
+    width:100%;
     background-color: #007BFF;
     border: none;
     color: white;
@@ -32,7 +34,7 @@ nav {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    margin: 0 10px;
+    margin: 10px 0;
 }
 
 .nav-btn:hover {
@@ -55,19 +57,22 @@ body {
     border-radius: 8px;
 }
 
-#segitiga h1, #jajargenjang h1{
+#segitiga h1,
+#jajar-genjang h1 {
     font-size: 2em;
     margin-bottom: 10px;
-    
+
 }
-.segitiga-content h1{
+
+.segitiga-content h1 ,.jajargenjang-content h1{
     text-align: center;
     width: 100%;
 }
+
 .segitiga-content,
 .jajargenjang-content {
     display: flex;
-   flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 20px;
@@ -77,6 +82,7 @@ body {
     border-radius: 8px;
     background-color: #fff;
 }
+
 /*style untuk luas dan keliling*/
 .luas-segitiga-content,
 .keliling-segitiga-content,
@@ -92,6 +98,7 @@ body {
     vertical-align: top;
 
 }
+
 /*style form untuk input dan tombol*/
 .luas-segitiga-form,
 .keliling-segitiga-form,
@@ -130,8 +137,8 @@ button:hover {
 /* Style bagian hasil dan penjelasan */
 .hasil-penjelasan {
     margin-top: 20px;
-    padding: 10px;
-    background-color: #f4f4f9;
+    padding: 15px;
+    background-color: #eef;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
@@ -148,19 +155,28 @@ button:hover {
     font-size: 1.1em;
     color: #555;
 }
+.hidden{
+    display: none;
+}
 
+@media screen and (max-width: 480px) {
 
-@media screen and (max-width: 768px) {
     .luas-segitiga-content,
     .keliling-segitiga-content,
     .luas-jajargenjang-content,
-    .keliling-jajargenjang-content {
+    .keliling-jajargenjang-content,
+    .luas-segitiga-img,
+    .keliling-segitiga-img,
+    .luas-segitiga-form,
+    .luas-jajargenjang-form,
+    .luas-jajargenjang-img,
+    .keliling-jajargenjang-img {
         width: 100%;
         margin: 0;
         margin-bottom: 20px;
     }
-    
-    .segitiga-content, 
+
+    .segitiga-content,
     .jajargenjang-content {
         flex-direction: column;
     }

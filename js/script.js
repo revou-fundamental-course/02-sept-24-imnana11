@@ -1,3 +1,14 @@
+function showSegitiga() {
+    document.getElementById("segitiga").classList.remove("hidden");
+    document.getElementById("jajar-genjang").classList.add("hidden");
+}
+
+function showJajarGenjang() {
+    document.getElementById("segitiga").classList.add("hidden");
+    document.getElementById("jajar-genjang").classList.remove("hidden");
+}
+
+
 function hitungLuas() {
      // Ambil nilai alas dan tinggi dari input
      var alas = parseFloat(document.getElementById("alas-segitiga").value);
@@ -94,3 +105,4 @@ function hitungKelilingJajargenjang() {
     var penjelasan = "Keliling = 2 × (Alas + Sisi Miring)\nKeliling = 2 × (" + alas + " + " + sisiMiring + ")\nKeliling = " + keliling;
     document.getElementById('penjelasan-keliling-jajargenjang').innerText = penjelasan;
 }
+

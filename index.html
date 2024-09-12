@@ -32,14 +32,7 @@
         <section id="segitiga">
             <div class="segitiga-content">
                 <h1>Segitiga</h1>
-                <article>
-                    Segitiga adalah bentuk bangun datar yang memiliki tiga sisi dan tiga sudut dengan panjang atau besar
-                    yang sama maupun berbeda-beda.
-
-                    Segitiga sendiri terbagi menjadi dua jenis, yaitu segitiga yang dilihat berdasarkan sisinya dan
-                    segitiga
-                    yang dilihat berdasarkan besaran sudutnya.
-                </article>
+               
 
                 <!--Begin luas segitiga -->
                 <div class="luas-segitiga-content">
@@ -122,96 +115,78 @@
 
         <!--Begin Jajargenjang-->
         <section id="jajar-genjang">
-            <h1>Jajar genjang</h1>
-            <article>
-                Jajar genjang adalah bangun datar dua dimensi yang memiliki dua pasang sisi berhadapan yang sejajar dan
-                sama panjang.
-                <ul>
-                    <li>
-                        Sisi-sisi berhadapan: Sejajar dan sama panjang.
-                    </li>
-                    <li>
-                        Sudut berhadapan: Sama besar.
-                    </li>
-                    <li>
-                        Sudut yang berdekatan: Jumlah dua sudut yang berdekatan selalu 180 derajat.
-                    </li>
-                </ul>
-            </article>
-
-            <!--Begin luas jajargenjang -->
-            <div class="luas-jajargenjang-content">
-                <section>
-                    <header>
-                        <h2 class="luas-jajargenjang-header">Luas Jajargenjang</h2>
-                    </header>
-                    <div class="luas-jajargenjang-img">
-                        <article>
-                            <img src="assets\jajar-genjang.png" />
-                            <p class="rumus-luas-jajargenjang"></p>
-                            Rumus Luas Jajar genjang:<br> L = Luas<br> a = Panjang Alas<br> t = Tinggi<br> L = a x
-                            t<br>
-                            </p>
-                        </article>
-
-                    </div>
-                    <form class="luas-jajargenjang-form">
-                        <label for="alas-jajargenjang">Masukkan panjang alas jajar genjang</label>
-                        <input id="alas-jajargenjang" type="number">
-                        <br />
-                        <label for="tinggi-jajargenjang">Masukkan tinggi jajar genjang</label>
-                        <input id="tinggi-jajargenjang" type="number">
-                        <br />
-                        <button type="button" onclick="hitungLuasJajargenjang()">Hitung</button>
-
-                    </form>
-                    <div class="hasil-penjelasan">
-                        <p>Hasil: <span id="luas-jajargenjang">0</span></p>
-                        <h3>Penjelasan Cara Menghitung:</h3>
-                        <pre id="penjelasan-luas-jajargenjang">-</pre>
-                        <!-- Gunakan <pre> untuk menjaga format baris -->
-                    </div>
-                </section>
-            </div>
-            <!--End luas jajargenjang-->
-
-            <!--Begin keliling jajargenjang-->
-            <div class="keliling-jajargenjang-content">
-                <section>
-                    <header>
-                        <h2 class="keliling-jajargenjang-header">Keliling Jajar genjang</h2>
-                    </header>
-                    <div class="keliling-jajargenjang-img">
-                        <article>
-                            <img src="assets\jajar-genjang.png" />
-                            <p class="rumus-keliling-jajargenjang">
-                                Rumus Keliling Jajargenjang:<br> K = 2x(a+b) <br>K = Keliling<br> a = panjang
-                                alas<br> b= sisi miring
-                            </p>
-                        </article>
-                    </div>
-                    <form class="keliling-jajargenjang-form">
-                        <label for="alas-jajargenjang">Masukkan alas jajar genjang</label>
-                        <input id="alas-jajargenjang" type="number">
-                        <br />
-                        <label for="sisi-miring">Masukkan sisi miring jajar genjang</label>
-                        <input id="sisi-miring" type="number">
-                        <br />
-                        <button type="button" onclick="hitungKelilingJajargenjang()">Hitung</button>
-
-                    </form>
-
-                    <div class="hasil-penjelasan">
-                        <p>Hasil: <span id="keliling-jajargenjang">0</span></p>
-                        <h3>Penjelasan Cara Menghitung:</h3>
-                        <pre id="penjelasan-keliling-jajargenjang">-</pre>
-                    </div>
-                </section>
-            </div>
-            <!--End keliling jajar genjang-->
+            <div class="jajargenjang-content">
+                <h1>Jajar genjang</h1>
+        
+               
+                       <!-- Begin luas jajargenjang -->
+                <div class="luas-jajargenjang-content">
+                    <section>
+                        <header>
+                            <h2 class="luas-jajargenjang-header">Luas Jajargenjang</h2>
+                        </header>
+                        <div class="luas-jajargenjang-img">
+                            <article>
+                                <img src="assets/jajar-genjang.png" />
+                                <p class="rumus-luas-jajargenjang">
+                                    Rumus Luas Jajar genjang:<br> L = Luas<br> a = Panjang Alas<br> t = Tinggi<br> L = a x t<br>
+                                </p>
+                            </article>
+                        </div>
+                        <form class="luas-jajargenjang-form">
+                            <label for="alas-jajargenjang">Masukkan panjang alas jajar genjang</label>
+                            <input id="alas-jajargenjang" type="number">
+                            <br />
+                            <label for="tinggi-jajargenjang">Masukkan tinggi jajar genjang</label>
+                            <input id="tinggi-jajargenjang" type="number">
+                            <br />
+                            <button type="button" onclick="hitungLuasJajargenjang()">Hitung</button>
+                        </form>
+                        <div class="hasil-penjelasan">
+                            <p>Hasil: <span id="luas-jajargenjang">0</span></p>
+                            <h3>Penjelasan Cara Menghitung:</h3>
+                            <pre id="penjelasan-luas-jajargenjang">-</pre>
+                        </div>
+                    </section>
+                </div>
+                <!-- End luas jajargenjang -->
+        
+                <!-- Begin keliling jajargenjang -->
+                <div class="keliling-jajargenjang-content">
+                    <section>
+                        <header>
+                            <h2 class="keliling-jajargenjang-header">Keliling Jajar genjang</h2>
+                        </header>
+                        <div class="keliling-jajargenjang-img">
+                            <article>
+                                <img src="assets/jajar-genjang.png" />
+                                <p class="rumus-keliling-jajargenjang">
+                                    Rumus Keliling Jajargenjang:<br> K = 2x(a+b) <br>K = Keliling<br> a = panjang alas<br> b =
+                                    sisi miring
+                                </p>
+                            </article>
+                        </div>
+                        <form class="keliling-jajargenjang-form">
+                            <label for="alas-jajargenjang">Masukkan alas jajar genjang</label>
+                            <input id="alas-jajargenjang" type="number">
+                            <br />
+                            <label for="sisi-miring">Masukkan sisi miring jajar genjang</label>
+                            <input id="sisi-miring" type="number">
+                            <br />
+                            <button type="button" onclick="hitungKelilingJajargenjang()">Hitung</button>
+                        </form>
+                        <div class="hasil-penjelasan">
+                            <p>Hasil: <span id="keliling-jajargenjang">0</span></p>
+                            <h3>Penjelasan Cara Menghitung:</h3>
+                            <pre id="penjelasan-keliling-jajargenjang">-</pre>
+                        </div>
+                    </section>
+                </div>
+                <!-- End keliling jajargenjang -->
             </div>
         </section>
-        <!--End Jajar genjang-->
+         <!--End Jajar genjang-->
+
     </main>
     <!--End Main-->
 
