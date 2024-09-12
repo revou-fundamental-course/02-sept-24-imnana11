@@ -1,0 +1,167 @@
+.main-header {
+    background-color: #fff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #333;
+}
+
+header p {
+    margin: 5px 0;
+    color: #777;
+}
+
+/* Navigation */
+nav {
+    margin: 20px 0;
+}
+
+.nav-btn {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.nav-btn:hover {
+    background-color: #0056b3;
+}
+
+body {
+    background-color: ghostwhite;
+    font-family: "Twemoji Country Flags", '__Poppins_5a20cc', Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 141%;
+    letter-spacing: 0;
+}
+
+.selection-btn {
+    height: 32px;
+    background-color: bisque;
+    border: none;
+    border-radius: 8px;
+}
+
+#segitiga h1, #jajargenjang h1{
+    font-size: 2em;
+    margin-bottom: 10px;
+    
+}
+.segitiga-content h1{
+    text-align: center;
+    width: 100%;
+}
+.segitiga-content,
+.jajargenjang-content {
+    display: flex;
+   flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+/*style untuk luas dan keliling*/
+.luas-segitiga-content,
+.keliling-segitiga-content,
+.luas-jajargenjang-content,
+.keliling-jajargenjang-content {
+    width: 45%;
+    padding: 12px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+/*style form untuk input dan tombol*/
+.luas-segitiga-form,
+.keliling-segitiga-form,
+.luas-jajargenjang-form,
+.keliling-jajargenjang-form {
+    background-color: #F5F4FB;
+    border-radius: 8px;
+    padding: 20px 12px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.p {
+    margin-top: 20px;
+}
+
+/* Style bagian hasil dan penjelasan */
+.hasil-penjelasan {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f4f4f9;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Heading untuk hasil */
+.hasil-penjelasan h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Paragraph hasil */
+.hasil-penjelasan p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+
+@media screen and (max-width: 768px) {
+    .luas-segitiga-content,
+    .keliling-segitiga-content,
+    .luas-jajargenjang-content,
+    .keliling-jajargenjang-content {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    .segitiga-content, 
+    .jajargenjang-content {
+        flex-direction: column;
+    }
+}
